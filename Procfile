@@ -1,1 +1,1 @@
-web: npm install & gulp build & http-server
+web: serve dist
