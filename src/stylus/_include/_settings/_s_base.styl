@@ -1,0 +1,42 @@
+/* ベース
+---------------------------------- */
+
+html
+	height 100%
+	font-size 62.5%
+
+body
+	init()
+
+a
+	&:link, &:visited
+		siteLink()
+	&:hover, &:active
+		siteHover()
+
+::selection
+	background-color POINT_COLOR01
+	color #ffffff
+.is-sp
+	display none
+
+	+MQ(SP_RES_WID)
+		display block
+		& + .is-pc
+			display none
+
+
+input[type="text"], input[type="button"], button, textarea
+	margin 0
+	padding 0
+	background none
+	border none
+	border-radius 0
+	outline none
+	-webkit-appearance none
+	-moz-appearance none
+	appearance none
+	
+
+
+

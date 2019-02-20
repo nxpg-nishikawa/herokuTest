@@ -1,0 +1,30 @@
+doctype html
+include ../_settings/_s_variables
+include ../_settings/_s_meta
+include ../_settings/_s_mixin
+
+block vars
+
+html(lang="ja")
+	head
+		include ../_settings/_s_head
+
+	body
+
+		main(class= "is-" + KEY)#l-layout-contentsTop
+			if(header == "true")
+				include ../_components/_c_common_header01
+
+			if(side[0] == "true")
+				.l-layout-sideWrapper(class= (side[1] == "left" ? "is-left" : "is-right" ) )
+					.l-layout-contentsBody
+						block contents
+					aside.l-layout-sideContents
+						block side
+			else
+				.l-layout-contentsBody
+					block contents
+
+			if(footer == "true")
+				include ../_components/_c_common_footer01
+

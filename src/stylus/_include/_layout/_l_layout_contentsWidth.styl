@@ -1,0 +1,15 @@
+.l-layout-contentsWidth
+	width PC_RES_WID
+	margin 0 auto
+
+	+MQ(SP_RES_WID)
+		width auto
+
+.animationSet
+	transition all, 0.3s ease
+	&.is-animation001
+		transform translate3d(300px,0,0)
+	&.is-animation002
+		transform translate3d(300px,300px,0)
+	&.is-animation003
+		transform translate3d(0,300px,0)

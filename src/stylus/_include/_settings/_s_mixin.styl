@@ -1,0 +1,100 @@
+// /* mixin & Variable */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+
+MQ(maxWidth){
+	@media screen and (max-width: maxWidth) {
+		{block}
+	}
+}
+
+wSet(width, parent)
+	return width / parent * 100%;
+
+CF()
+	+cache('clearfix')
+		&::after
+			content: "";
+			display: block;
+			clear: both;
+
+flexBox()
+	display: flex;
+	flex-wrap: wrap;
+
+roboto()
+	font-family: 'Roboto', sans-serif;
+
+// body
+init()
+	-webkit-text-size-adjust: 100%;
+	
+	// min-width: PC_CT_WID;
+	min-width: PC_RES_WID;
+	min-height: 100%;
+	height: 100%;
+
+	background-color: DF_BG_COLOR;
+	color: DF_TEXT_COLOR;
+
+	fontSet();
+
+	input, select, textarea, button
+		fontSet();
+			
+	+MQ(SP_RES_WID)
+		min-width: SP_CT_WID;
+		width: 100%;
+
+fontSet()
+	font-family: DF_FONT;
+	fontSize(14);
+	line-height: 1.6;
+	-webkit-text-size-adjust: 100%;
+	
+	+MQ(SP_RES_WID)
+		fontSize(13);
+		
+fontSize(size) {
+	font-size: (size) px;
+	font-size: (size / 10) rem;
+}
+
+// サイトリンク色
+siteLink() {
+	color: inherit;
+	// text-decoration: underline;
+	text-decoration: none
+}
+siteHover() {
+	text-decoration: none
+}
+
+lastReset()
+	h1, h2, h3, h4, h5, h6, p, div dt, dd, figure, table
+		&:last-child
+			margin-bottom: 0;
+
+vwsp(size)
+	rate = 100 / 650;
+	return rate * size * 1vw
+
+vwpc(size)
+	rate = 100 / 1600;
+	return rate * size * 1vw
+
+fontSp(font_size)
+	font-size: font_size * 1px;
+	font-size: vwsp(font_size);
+
+fontPc(font_size)
+	font-size: font_size * 1px;
+	font-size: vwpc(font_size);
+
+.COMPONENT_MARGIN
+	margin-bottom 60px
+
+	+MQ(SP_RES_WID)
+		margin-bottom 40px
+		
+	&:last-child
+		margin-bottom 0

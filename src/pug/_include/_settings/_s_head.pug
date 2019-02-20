@@ -1,0 +1,27 @@
+link(rel= "canonical", href=DOMAIN + PAGE.URL)
+meta(charset= "utf-8")
+meta(http-equiv= "X-UA-Compatible", content="IE=edge")
+//- meta(name= "viewport", content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=0.5 , maximum-scale=2")
+meta(name= "viewport", content="width=device-width, minimum-scale=0.5 , maximum-scale=2")
+meta(name= "format-detection", content="telephone=no")
+
+title #{PAGE.TITLE + (KEY == "home" ? "" : " | ") + HOME_TITLE}
+
+meta(content= PAGE.DESCRIPTION, name="description")
+meta(content= PAGE.KEYWORDS, name="keywords")
+meta(content= PAGE.TITLE + (KEY == "home" ? "" : " | ") + HOME_TITLE, property="og:title")
+meta(content= PAGE.DESCRIPTION, property="og:description")
+meta(content= OGP_IMAGE, property="og:image")
+meta(content= DOMAIN + PAGE.URL, property="og:url")
+meta(content= (KEY == "home" ? "website" : "article"), property="og:type")
+meta(content= "ja_JP", property="og:locale")
+
+link(rel= "stylesheet", href= RELATIVE_PATH+CSS_PATH+"/style.css")
+link(rel="shortcut icon" href= RELATIVE_PATH+"images/common/favicon.ico")
+link(rel="apple-touch-icon" href= RELATIVE_PATH+"images/common/webclip.png")
+
+//- script(src= "https://code.createjs.com/1.0.0/createjs.min.js")
+script(src= RELATIVE_PATH+JS_PATH+"/vendor.js")
+script(src= RELATIVE_PATH+JS_PATH+"/function.js")
+
+

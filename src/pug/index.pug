@@ -1,0 +1,22 @@
+extends _include/_template/_t_base_template
+
+block vars
+	- var KEY = "list"
+	- var PAGE = PAGES[KEY]
+	- var RELATIVE_PATH = PAGE.PATH
+	- var header = "true"
+	- var footer = "true"
+	- var side = ["false","left"]
+	
+block contents
+	section.l-layout-sectionWrapper
+
+		+l-layout-contentsWidth
+			h1.m-module-borderBottomTitle01 ページリスト
+			ul.m-module-linkListSet
+				li
+					a(href="home.html") トップ
+				li
+					a(href="components.html") コンポーネント
+			
+			p.animationSet(data-step="3" data-action="click") ボタン
