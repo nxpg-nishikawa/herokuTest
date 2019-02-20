@@ -5,6 +5,7 @@
     "node": "8.11.4"
   },
   "scripts": {
+    "postinstall": "gulp default",
      "start": "nf start"
   },
   "dependencies": {
