@@ -3,8 +3,6 @@
   "private": true,
   "scripts": {
     "postinstall": "gulp build"
-    // "start": "nf start",
-    // "build": "webpack"
   },
   "dependencies": {
     "serve": "~10.1.1",
