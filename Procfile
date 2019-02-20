@@ -1,1 +1,1 @@
-web: serve dist
+web: node node_modules/gulp/bin/gulp build
