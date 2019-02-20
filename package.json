@@ -4,7 +4,7 @@
   "scripts": {
     "start": "nf start",
     "build": "webpack",
-    "postinstall": "gulp build"
+    "postinstall": "gulp"
   },
   "dependencies": {
     "serve": "~10.1.1",
