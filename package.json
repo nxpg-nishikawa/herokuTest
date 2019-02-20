@@ -2,6 +2,7 @@
   "name": "awake",
   "private": true,
   "scripts": {
+    "postinstall": "gulp",
     "start": "nf start",
     "build": "webpack"
   },
