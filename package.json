@@ -2,7 +2,7 @@
   "name": "awake",
   "private": true,
   "scripts": {
-    "postinstall": "gulp build"
+    "postinstall": "gulp default"
   },
   "dependencies": {
     "serve": "~10.1.1",
