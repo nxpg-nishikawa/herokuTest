@@ -2,9 +2,9 @@
   "name": "awake",
   "private": true,
   "scripts": {
-    "postinstall": "gulp",
-    "start": "nf start",
-    "build": "webpack"
+    "postinstall": "gulp build"
+    // "start": "nf start",
+    // "build": "webpack"
   },
   "dependencies": {
     "serve": "~10.1.1",
