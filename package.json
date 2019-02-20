@@ -3,14 +3,15 @@
   "private": true,
   "scripts": {
     "start": "nf start",
-    "build": "webpack",
-    "postinstall": "gulp watch"
+    "build": "webpack"
   },
   "dependencies": {
     "serve": "~10.1.1",
     "foreman": "~3.0.1",
     "@babel/polyfill": "^7.0.0",
-    "youtube-iframe": "^1.0.3",
+    "youtube-iframe": "^1.0.3"
+  },
+  "devDependencies": {
     "@babel/preset-es2016": "^7.0.0-beta.53",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
