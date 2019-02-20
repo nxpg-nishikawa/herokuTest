@@ -85,11 +85,11 @@ gulp.task('images', () => {
 const browserSync = require("browser-sync");
 
 gulp.task('browser-sync', () => {
-	browserSync({
-		server: {
-			baseDir:'dist/'
-		}
-	});
+	// browserSync({
+	// 	server: {
+	// 		baseDir:'dist/'
+	// 	}
+	// });
 	gulp.watch('dist/' + "**/*.html", ['reload']);
 	gulp.watch('dist/' + "**/*.js", ['reload']);
 	gulp.watch('dist/' + "**/*.css", ['reload']);
@@ -110,5 +110,6 @@ gulp.task('watch', function () {
 	gulp.watch('src/stylus/' + '**/*.styl', ['stylus']);
 	gulp.watch('src/images/' + '/**/*.{png,jpg,gif,svg}', ['images']);
 });
+
 
 gulp.task('default', ['browser-sync', 'watch']);
