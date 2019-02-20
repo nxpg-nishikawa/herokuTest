@@ -1,0 +1,309 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q,
+blockquote {
+  quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+img {
+  vertical-align: bottom;
+  border: none;
+}
+button,
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+input {
+  outline: 0;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  font-family: sans-serif;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+.COMPONENT_MARGIN {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .COMPONENT_MARGIN {
+    margin-bottom: 40px;
+  }
+}
+.COMPONENT_MARGIN:last-child {
+  margin-bottom: 0;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  min-width: 1140px;
+  min-height: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #333;
+  font-family: "ヒラギノ角ゴ ProN W3", 'Hiragino Kaku Gothic ProN', "游ゴシック", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+}
+body input,
+body select,
+body textarea,
+body button {
+  font-family: "ヒラギノ角ゴ ProN W3", 'Hiragino Kaku Gothic ProN', "游ゴシック", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+@media screen and (max-width: 768px) {
+  body input,
+  body select,
+  body textarea,
+  body button {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 320px;
+    width: 100%;
+  }
+}
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+::selection {
+  background-color: #2b193d;
+  color: #fff;
+}
+.is-sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .is-sp {
+    display: block;
+  }
+  .is-sp + .is-pc {
+    display: none;
+  }
+}
+input[type="text"],
+input[type="button"],
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+footer.is-global {
+  display: block;
+}
+header.is-global {
+  display: block;
+}
+.l-layout-contentsWidth {
+  width: 1140px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .l-layout-contentsWidth {
+    width: auto;
+  }
+}
+.animationSet {
+  transition: all, 0.3s ease;
+}
+.animationSet.is-animation001 {
+  transform: translate3d(300px, 0, 0);
+}
+.animationSet.is-animation002 {
+  transform: translate3d(300px, 300px, 0);
+}
+.animationSet.is-animation003 {
+  transform: translate3d(0, 300px, 0);
+}
+main.is-home .p-home-mainvisual {
+  display: block;
+}
