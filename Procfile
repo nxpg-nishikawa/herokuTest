@@ -1,1 +1,1 @@
-web: serve public
+web: serve dist
