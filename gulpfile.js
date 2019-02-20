@@ -113,3 +113,4 @@ gulp.task('watch', function () {
 
 
 gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('build', ['webpack', 'jsVendor', 'pug', 'stylus02', 'stylus']);
